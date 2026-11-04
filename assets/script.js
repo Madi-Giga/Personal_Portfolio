@@ -15,7 +15,6 @@ document.querySelectorAll(".nav a").forEach((link) => {
   });
 });
 
-// Highlight the navigation item for the section currently in view.
 const sections = document.querySelectorAll("main section[id]");
 const navLinks = document.querySelectorAll(".nav a");
 const observer = new IntersectionObserver((entries) => {
