@@ -1,3 +1,4 @@
+
 <?php
 $pageTitle = "Abrham Belay | AI & Technology Enthusiast";
 ?>
@@ -16,6 +17,7 @@ $pageTitle = "Abrham Belay | AI & Technology Enthusiast";
 <body>
 <header class="site-header">
   <a class="brand" href="#home"><span class="brand-mark">A</span><span>AB<span class="brand-dot">.</span></span></a>
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Toggle theme">◐</button>
   <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
   <nav class="nav" id="mainNav">
     <a href="#home" class="active">Home</a><a href="#about">About</a><a href="#services">Focus</a>
@@ -29,6 +31,7 @@ $pageTitle = "Abrham Belay | AI & Technology Enthusiast";
   <div class="hero-copy">
     <div class="eyebrow"><span class="status-dot"></span> STUDENT · PROGRAMMER · FUTURE BUILDER</div>
     <h1>Hi, I'm <span>Abrham Belay.</span><br>Curious about technology.<br>Focused on <em>what's next.</em></h1>
+    <p class="hero-role-line">Currently exploring: <strong id="roleText">Artificial Intelligence</strong><span class="typing-cursor">|</span></p>
     <p class="hero-lead">I’m a student and aspiring AI developer who enjoys turning ideas into practical digital projects. I’m learning, experimenting, and building toward a future where technology can make a meaningful difference.</p>
     <div class="hero-actions"><a class="btn btn-dark" href="#projects">Explore my work <span>↗</span></a><a class="text-link" href="#contact">Get in touch <span>→</span></a></div>
     <div class="hero-note"><span class="note-line"></span><span>Based in Ethiopia · Open to learning and collaboration</span></div>
@@ -109,10 +112,10 @@ $pageTitle = "Abrham Belay | AI & Technology Enthusiast";
   <div class="section-kicker">05 — SELECTED PROJECTS</div>
   <div class="section-heading-row"><h2>Ideas turned into<br><em>experiments.</em></h2><p class="section-intro">A selection of projects and concepts I’ve worked on. Some are ongoing learning projects.</p></div>
   <div class="project-grid">
-    <article class="project-card project-feature"><div class="project-art art-dashboard"><div class="dash-top"><span>DATA INSIGHTS</span><span>•••</span></div><div class="dash-number">Dataset overview</div><div class="dash-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="dash-bottom"><span>01 / ANALYZE</span><span>↗</span></div></div><div class="project-meta"><span>PYTHON · DATA ANALYSIS</span><span>01</span></div><h3>Dataset Analyzer Dashboard</h3><p>A learning project concept designed to upload datasets, inspect data quality, create visualizations, and generate useful insights.</p><span class="project-status">IN DEVELOPMENT</span></article>
-    <article class="project-card"><div class="project-art art-portal"><div class="portal-window"><div class="portal-side"></div><div class="portal-content"><i></i><i></i><i></i><b></b></div></div><span class="art-caption">STUDENT PORTAL</span></div><div class="project-meta"><span>WEB DEVELOPMENT</span><span>02</span></div><h3>School Portal Concept</h3><p>A web application concept for viewing student scores and supporting communication between students and teachers.</p><span class="project-status">LEARNING PROJECT</span></article>
-    <article class="project-card"><div class="project-art art-space"><div class="planet"></div><div class="space-orbit"></div><span class="space-star s1">✦</span><span class="space-star s2">✧</span><span class="space-label">VULCAN CITY</span></div><div class="project-meta"><span>SPACE · SCIENCE CONCEPT</span><span>03</span></div><h3>Vulcan City</h3><p>A Mars-orbit colony concept explored through GFSSM, imagining systems that could support a future space settlement.</p><span class="project-status">COMPETITION PROJECT</span></article>
-    <article class="project-card"><div class="project-art art-hotel"><div class="hotel-word">OLYMPIC<small>HOTEL EXPERIENCE</small></div><div class="hotel-line"></div><span class="hotel-number">H / 01</span></div><div class="project-meta"><span>REACT · FRONT END</span><span>04</span></div><h3>Olympic Hotel Website</h3><p>A responsive hotel website project exploring reusable components, room listings, routing, and booking interfaces.</p><span class="project-status">WEB PROJECT</span></article>
+    <article class="project-card project-feature"><div class="project-art art-dashboard"><div class="dash-top"><span>DATA INSIGHTS</span><span>•••</span></div><div class="dash-number">Dataset overview</div><div class="dash-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="dash-bottom"><span>01 / ANALYZE</span><span>↗</span></div></div><div class="project-meta"><span>PYTHON · DATA ANALYSIS</span><span>01</span></div><h3>Dataset Analyzer Dashboard</h3><p>A learning project concept designed to upload datasets, inspect data quality, create visualizations, and generate useful insights.</p><span class="project-status">IN DEVELOPMENT</span><button class="project-more" type="button" data-project="dataset">Explore project <span>↗</span></button></article>
+    <article class="project-card"><div class="project-art art-portal"><div class="portal-window"><div class="portal-side"></div><div class="portal-content"><i></i><i></i><i></i><b></b></div></div><span class="art-caption">STUDENT PORTAL</span></div><div class="project-meta"><span>WEB DEVELOPMENT</span><span>02</span></div><h3>School Portal Concept</h3><p>A web application concept for viewing student scores and supporting communication between students and teachers.</p><span class="project-status">LEARNING PROJECT</span><button class="project-more" type="button" data-project="portal">Explore project <span>↗</span></button></article>
+    <article class="project-card"><div class="project-art art-space"><div class="planet"></div><div class="space-orbit"></div><span class="space-star s1">✦</span><span class="space-star s2">✧</span><span class="space-label">VULCAN CITY</span></div><div class="project-meta"><span>SPACE · SCIENCE CONCEPT</span><span>03</span></div><h3>Vulcan City</h3><p>A Mars-orbit colony concept explored through GFSSM, imagining systems that could support a future space settlement.</p><span class="project-status">COMPETITION PROJECT</span><button class="project-more" type="button" data-project="vulcan">Explore project <span>↗</span></button></article>
+    <article class="project-card"><div class="project-art art-hotel"><div class="hotel-word">OLYMPIC<small>HOTEL EXPERIENCE</small></div><div class="hotel-line"></div><span class="hotel-number">H / 01</span></div><div class="project-meta"><span>REACT · FRONT END</span><span>04</span></div><h3>Olympic Hotel Website</h3><p>A responsive hotel website project exploring reusable components, room listings, routing, and booking interfaces.</p><span class="project-status">WEB PROJECT</span><button class="project-more" type="button" data-project="hotel">Explore project <span>↗</span></button></article>
   </div>
 </div></section>
 
@@ -126,17 +129,30 @@ $pageTitle = "Abrham Belay | AI & Technology Enthusiast";
 <section class="section section-wrap contact-section" id="contact">
   <div class="section-kicker">07 — CONTACT</div><div class="section-heading-row"><h2>Say <em>hello.</em></h2><p class="section-intro">Have a question, a learning opportunity, or an interesting project idea? Send me a message.</p></div>
   <div class="contact-grid">
-    <div class="contact-copy"><h3>Let’s start a conversation.</h3><p>I’m interested in connecting with people who care about technology, science, and learning. Use the form and I’ll get back to you when I can.</p><div class="contact-detail"><span>LOCATION</span><b>Ethiopia</b></div><div class="contact-detail"><span>INTERESTS</span><b>AI · Programming · Science</b></div><div class="contact-detail"><span>EMAIL</span><b>Add your email address here</b></div></div>
-    <form class="contact-form" action="message.php" method="POST">
-      <div class="form-row"><label>Your name<input type="text" name="name" placeholder="Your name" required maxlength="100"></label><label>Your email<input type="email" name="email" placeholder="you@example.com" required maxlength="150"></label></div>
+    <div class="contact-copy"><h3>Let’s start a conversation.</h3><p>I’m interested in connecting with people who care about technology, science, and learning. Use the form and I’ll get back to you when I can.</p><div class="contact-detail"><span>LOCATION</span><b>Ethiopia</b></div><div class="contact-detail"><span>INTERESTS</span><b>AI · Programming · Science</b></div><div class="contact-detail"><span>EMAIL</span><b>abresh12@gmail.com</b></div></div>
+    <form class="contact-form" id="contactForm" action="message.php" method="POST">
+      <div class="form-trap" aria-hidden="true"><label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <div class="form-row"><label>Abrham<input type="text" name="name" placeholder="Abrham" required maxlength="100"></label><label>Your email<input type="email" name="email" placeholder="abresh12@gmail.com" required maxlength="150"></label></div>
       <label>Subject<input type="text" name="subject" placeholder="What is this about?" required maxlength="150"></label>
       <label>Your message<textarea name="message" rows="5" placeholder="Write your message..." required maxlength="3000"></textarea></label>
-      <button class="btn btn-dark" type="submit">Send message <span>↗</span></button>
-      <p class="form-note">The form uses PHP and MySQL. Set up the database using the included <code>database.sql</code> file.</p>
+      <button class="btn btn-dark submit-button" type="submit"><span class="submit-label">Send message</span><span>↗</span></button>
+      <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+      <p class="form-note">Messages are submitted securely through PHP and saved in the portfolio database.</p>
     </form>
   </div>
 </section>
 </main>
+
+<div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-panel">
+    <button class="modal-close" type="button" aria-label="Close project details" data-close-modal>×</button>
+    <span class="mini-label" id="modalCategory">PROJECT DETAILS</span>
+    <h2 id="modalTitle">Project title</h2>
+    <p id="modalDescription"></p>
+    <div class="modal-note" id="modalNote"></div>
+  </div>
+</div>
 
 <footer class="footer"><div class="section-wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">A</span><span>AB<span class="brand-dot">.</span></span></a><p>Curiosity in mind. Technology in progress.</p><span>© <?= date("Y") ?> Abrham Belay</span></div></footer>
 <script src="assets/script.js"></script>
