@@ -49,19 +49,3 @@ RUN IT WITH XAMPP
 6. Test the contact form. The message should appear in phpMyAdmin:
    abrham_portfolio > messages
 
-IMPORTANT PERSONAL CUSTOMIZATION
---------------------------------
-- The email line currently says "Add your email address here" because your email was
-  not provided. Replace it in index.php with an email address you want public.
-- Add your real profile photo if you want one. The current hero uses an original
-  CSS-built letter illustration, not a fake portrait.
-- Add your actual GitHub, LinkedIn, certificates, and project links when ready.
-- Skill bars are rough self-assessments, not measured scores. Adjust or remove them.
-- The experience section describes learning and activities; it does not invent
-  professional employment or a university degree.
-
-NOTES
------
-This is an original implementation inspired by the section order and clean editorial
-portfolio feel of the Workfolio demo. It does not include BootstrapMade's source code,
-licensed template files, or original images.
